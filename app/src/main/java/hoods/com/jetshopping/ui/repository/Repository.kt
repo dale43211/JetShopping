@@ -18,7 +18,7 @@ class Repository(
     fun getItemWithStoreAndList(id: Int) =
         listDao.getItemWithStoreAndListFilteredById(id)
 
-    fun getItemWithStoreAndListFilteredById(id: Int) =
+    fun getItemsWithStoreAndListFilteredById(id: Int) =
         listDao.getItemsWithStoreAndListFilteredById(id)
 
     suspend fun insertList(shoppingList: ShoppingList){
